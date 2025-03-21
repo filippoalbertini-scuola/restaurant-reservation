@@ -1,11 +1,11 @@
 -- Insert fake customers
-INSERT INTO Customers (first_name, last_name, phone, email) VALUES
-('John', 'Doe', '1234567890', 'john.doe@example.com'),
-('Jane', 'Smith', '0987654321', 'jane.smith@example.com'),
-('Alice', 'Brown', '1112223333', 'alice.brown@example.com'),
-('Robert', 'Johnson', '2223334444', 'robert.johnson@example.com'),
-('Emily', 'Davis', '3334445555', 'emily.davis@example.com'),
-('Michael', 'Wilson', '4445556666', 'michael.wilson@example.com');
+INSERT INTO Customers (first_name, last_name, phone, email,password) VALUES
+('John', 'Doe', '1234567890', 'john.doe@example.com','password'),
+('Jane', 'Smith', '0987654321', 'jane.smith@example.com','password'),
+('Alice', 'Brown', '1112223333', 'alice.brown@example.com','password'),
+('Robert', 'Johnson', '2223334444', 'robert.johnson@example.com','password'),
+('Emily', 'Davis', '3334445555', 'emily.davis@example.com','password'),
+('Michael', 'Wilson', '4445556666', 'michael.wilson@example.com','password');
 
 -- Insert fake tables
 INSERT INTO Tables (table_number, seats) VALUES

@@ -1,9 +1,19 @@
+-- Purpose: Create tables for the restaurant reservation system.
+
+-- Drop tables if they exist
+DROP TABLE IF EXISTS Table_Assignments;
+DROP TABLE IF EXISTS  Reservations;
+DROP TABLE IF EXISTS  Tables;
+DROP TABLE IF EXISTS  Customers;
+
+-- Create tables
 CREATE TABLE Customers (
     customer_id SERIAL PRIMARY KEY,
     first_name VARCHAR(50) NOT NULL,
     last_name VARCHAR(50) NOT NULL,
-    phone VARCHAR(15) UNIQUE NOT NULL,
-    email VARCHAR(100) UNIQUE NOT NULL
+    phone VARCHAR(15) NOT NULL,
+    email VARCHAR(100) UNIQUE NOT NULL,
+    password VARCHAR(100) NOT NULL
 );
 
 CREATE TABLE Tables (
@@ -34,3 +44,4 @@ CREATE TABLE Table_Assignments (
 CREATE INDEX idx_reservations_date ON Reservations(reservation_date);
 CREATE INDEX idx_reservations_customer ON Reservations(customer_id);
 CREATE INDEX idx_available_tables ON Tables(table_id);
+
