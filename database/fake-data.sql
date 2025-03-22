@@ -26,7 +26,7 @@ INSERT INTO Reservations (reservation_date, reservation_time, number_of_people, 
 ('2025-04-06', '19:30:00', 5, 6, 'pending');
 
 -- Insert fake table assignments
-INSERT INTO Table_Assignments (reservation_id, table_id) VALUES
+INSERT INTO Reservations_Tables (reservation_id, table_id) VALUES
 (1, 2),
 (2, 1),
 (4, 5),

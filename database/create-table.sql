@@ -32,7 +32,7 @@ CREATE TABLE Reservations (
     CONSTRAINT fk_customer FOREIGN KEY (customer_id) REFERENCES Customers(customer_id) ON DELETE CASCADE
 );
 
-CREATE TABLE Table_Assignments (
+CREATE TABLE Reservations_Tables (
     assignment_id SERIAL PRIMARY KEY,
     reservation_id INT NOT NULL,
     table_id INT NOT NULL,
@@ -43,5 +43,4 @@ CREATE TABLE Table_Assignments (
 
 CREATE INDEX idx_reservations_date ON Reservations(reservation_date);
 CREATE INDEX idx_reservations_customer ON Reservations(customer_id);
-CREATE INDEX idx_available_tables ON Tables(table_id);
 
