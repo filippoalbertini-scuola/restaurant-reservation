@@ -85,8 +85,8 @@ import { CommonModule } from '@angular/common';
 export class LoginComponent {
   @Output() loginSuccess = new EventEmitter<string>();
 
-  txtEmail: string = 'name.surname';
-  txtPassword: string = 'password1';
+  txtEmail: string = 'john.doe@example.com';
+  txtPassword: string = 'password';
   okLogin: boolean = false;
   auth: AuthModel | null = null;
 

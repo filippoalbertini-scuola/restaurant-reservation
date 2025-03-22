@@ -83,6 +83,14 @@ namespace AS2425._4F.Prof.RestaurantReservation
                 app.UseSwaggerUI();
             }
 
+            // enable CORS
+            app.UseCors(options =>
+                options
+                    .AllowAnyOrigin()
+                    .AllowAnyMethod()
+                    .AllowAnyHeader()
+            );
+
             app.UseHttpsRedirection();
 
             app.UseAuthorization();
